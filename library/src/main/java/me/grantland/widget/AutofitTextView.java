@@ -3,16 +3,16 @@ package me.grantland.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.TypedValue;
-import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 /**
- * A {@link TextView} that re-sizes its text to be no larger than the width of the view.
+ * A {@link AppCompatTextView} that re-sizes its text to be no larger than the width of the view.
  *
  * @attr ref R.styleable.AutofitTextView_sizeToFit
  * @attr ref R.styleable.AutofitTextView_minTextSize
  * @attr ref R.styleable.AutofitTextView_precision
  */
-public class AutofitTextView extends TextView implements AutofitHelper.OnTextSizeChangeListener {
+public class AutofitTextView extends AppCompatTextView implements AutofitHelper.OnTextSizeChangeListener {
 
     private AutofitHelper mHelper;
 
